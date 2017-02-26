@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="in.shrey.gridrecycler.MainActivity">
+
+    <RelativeLayout
+
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/main_Image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#333745"
+            android:fontFamily="cursive"
+            android:gravity="center"
+
+            android:text="College App"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="normal|bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_Image">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <RelativeLayout
+            android:id="@+id/Settings_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerViewGrid"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="#333745" />
+
+            <TextView
+                android:id="@+id/settings_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin1"
+                android:drawableLeft="@drawable/settings"
+                android:drawablePadding="10dp"
+                android:paddingTop="10dp"
+                android:text="Settings"
+                android:textColor="#f000"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/settings_text"
+                android:layout_marginTop="10dp"
+                android:background="#333745" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Settings_layout">
+
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:alpha=".5"
+                android:fontFamily="sans-serif"
+                android:paddingTop="4dp"
+                android:text="Feedback"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/top_of_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feedback"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin1"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:alpha=".5"
+                android:text="TOP OF PAGE"
+                android:textColor="#f000" />
+
+            <TextView
+                android:id="@+id/powered_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_of_page"
+                android:fontFamily="cursive"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin1"
+
+                android:text="Powered By   AKGECIAN'S"
+                android:textColor="#3250E6"
+                android:textStyle="normal|bold" />
+            <ImageView
+                android:layout_below="@id/powered_by"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

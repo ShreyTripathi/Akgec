@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GridRecycler</string>
+
+    <string-array name="text_array">
+        <item>Calendar</item>
+        <item>Chat</item>
+        <item>Login</item>
+        <item>Map</item>
+        <item>News</item>
+        <item>Notices</item>
+        <item>Rate this App</item>
+        <item>Services</item>
+        <item>Video</item>
+
+    </string-array>
+
+</resources>
